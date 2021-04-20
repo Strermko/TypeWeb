@@ -1,9 +1,15 @@
-import Snake from "./Snake";
-import Horse from "./Horse";
-import Animal from "./Animal";
+import Board from "./ts/TicTacToe";
+import "./styles/main.scss";
 
-let sam = new Snake("Sammy the Python");
-let tom: Animal = new Horse("Tommy the Polomino");
+class App {
+    constructor(){
+        this.initializer();
+    }
 
-sam.move();
-tom.move();
+    initializer() {
+        let mainMenu = <HTMLDivElement>document.createElement('div');
+        const board = new Board(9);
+    }
+}
+
+const app = new App();
